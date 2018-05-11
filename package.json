@@ -1,0 +1,46 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "varun",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack-dev-server --env.env=dev --hot",
+    "dev:bundleanalyzer": "yarn dev --env.addons=bundleanalyzer",
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production webpack -p --env.env=prod",
+    "build:bundleanalyzer": "yarn build --env.addons=bundleanalyzer"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-prop-types": "^0.4.0",
+    "react-router-dom": "^4.2.2",
+    "semantic-ui-react": "^0.77.1",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "chalk": "^2.4.1",
+    "cross-env": "^5.1.5",
+    "css-loader": "^0.28.10",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.0.4",
+    "postcss-loader": "^2.1.5",
+    "react-hot-loader": "^4.1.3",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.19.1",
+    "webpack-bundle-analyzer": "^2.11.2",
+    "webpack-merge": "^4.1.2"
+  }
+}
