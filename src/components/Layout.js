@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Header, Container, Divider, Icon } from 'semantic-ui-react';
 
-import { pullRight, h1 } from './layout.scss';
+import { pullRight, h1 } from './Layout.scss';
 
 const Layout = ({ children }) => {
   return (

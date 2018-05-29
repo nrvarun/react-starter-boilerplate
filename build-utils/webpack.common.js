@@ -1,6 +1,8 @@
 const commonPaths = require('./common-paths');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
+
 const config = {
   entry: {
     vendor: ['semantic-ui-react']
@@ -14,9 +16,12 @@ const config = {
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader','eslint-loader']
       }
     ]
+  },
+  resolve: {
+    extensions: [".js", ".json", ".jsx"],
   },
   optimization: {
     splitChunks: {
@@ -33,7 +38,8 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html'
-    })
+    }),
+    StylelintPlugin()
   ]
 };
 module.exports = config;

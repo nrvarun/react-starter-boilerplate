@@ -1,0 +1,7 @@
+build/**/*.js
+dist/**/*.js
+static/**/*.js
+scripts/**/*.js
+src/js/plugins/**/*.js
+build-utils/*
+webpack.config.js

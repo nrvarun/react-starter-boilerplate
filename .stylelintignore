@@ -1,0 +1,3 @@
+dist/**/*.css
+src/css/1-plugins/**/*.scss
+.stylelintrc
