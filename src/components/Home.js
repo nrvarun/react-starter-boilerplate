@@ -6,10 +6,12 @@ import Layout from './Layout';
 const Home = () => {
   return (
     <Layout>
-      <p>Hey World of React and Webpack!</p>
-      <p>
-        <Link to="/dynamic">Navigate to Dynamic Page</Link>
-      </p>
+      <section>
+        <p>Hey World of React and Webpack!</p>
+        <p>
+          <Link to="/about">Navigate to Dynamic Page</Link>
+        </p>
+      </section>
     </Layout>
   );
 };
